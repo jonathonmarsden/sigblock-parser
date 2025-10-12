@@ -119,7 +119,7 @@ export default function Home() {
 
     vcard += 'CATEGORIES:SigBlockParser\n';
 
-    let notes = [];
+    const notes = [];
     if (contact.extraInfo && contact.extraInfo.length > 0) {
       notes.push('ADDITIONAL INFORMATION:');
       contact.extraInfo.forEach(info => notes.push(`• ${info}`));
