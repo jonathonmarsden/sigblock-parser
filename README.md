@@ -41,14 +41,20 @@ Mobile-optimized web app to parse email signature blocks using Claude AI and exp
 
 ## Deployment
 
-Deploy to Vercel:
-1. Push to GitHub (can be public or private repo)
-2. Import to Vercel
-3. Add environment variable:
-   - `ANTHROPIC_API_KEY` - Your Claude API key
-4. Configure custom domain: `sigblock.jonathonmarsden.com`
+Deployed on Vercel at https://sigblock.jonathonmarsden.com
 
 **Privacy Note:** The site is unlisted (robots.txt + noindex meta tags) so search engines won't find it. Share the URL only with trusted friends.
+
+See [`archive/DEPLOYMENT.md`](./archive/DEPLOYMENT.md) for original deployment instructions.
+
+## Monitoring & Health
+
+SigBlock Parser includes automated health checks that:
+- Verify API key configuration and connectivity
+- Send email alerts when issues are detected
+- Provide uptime monitoring via UptimeRobot
+
+**Health Check URL**: https://sigblock.jonathonmarsden.com/api/health
 
 ## Tech Stack
 
@@ -57,4 +63,4 @@ Deploy to Vercel:
 - Anthropic Claude API
 - Lucide React Icons
 
-Created by Jonathon Marsden • October 2025
+Created by Jonathon Marsden • October 2025 • Updated November 2025

@@ -59,7 +59,7 @@ export async function GET(request: NextRequest) {
 
     // Make the smallest possible API call to test connectivity
     const response = await anthropic.messages.create({
-      model: 'claude-3-haiku-20240307', // Cheapest/fastest model
+      model: 'claude-haiku-4-5-20251001', // Latest Haiku model
       max_tokens: 10,
       messages: [{
         role: 'user',
